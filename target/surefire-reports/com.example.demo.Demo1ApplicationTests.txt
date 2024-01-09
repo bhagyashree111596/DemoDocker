@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.Demo1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.179 s <<< FAILURE! - in com.example.demo.Demo1ApplicationTests
+contextLoads  Time elapsed: 0.025 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalArgumentException: Cannot instantiate interface org.springframework.context.ApplicationListener : org.springframework.boot.docker.compose.service.connection.DockerComposeServiceConnectionsApplicationListener
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/autoconfigure/service/connection/ConnectionDetailsFactories
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories
+
